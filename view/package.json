@@ -1,0 +1,15 @@
+{
+  "name": "01WRLC_SCF-SCF_DEV",
+  "version": "1.0.0",
+  "description": "The development package allows you to configure :",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "primo-explore-libraryh3lp-widget": "^1.0.2"
+  }
+}
