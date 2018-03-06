@@ -1,3 +1,8 @@
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+    color: #fff;
+    background-color: blue;
+}
+
 .chat-tab, .chat-frame-wrap{
   position: fixed;
   bottom: 0;

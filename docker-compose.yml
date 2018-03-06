@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+
+  devenv:
+    image: wrlc/wrlc-primo-devenv
+    ports:
+      - 8003:8003
+      - 3001:3001
+    volumes:
+      - type: bind
+        source: ./CENTRAL_PACKAGE
+        target: /home/node/primo-explore-devenv/primo-explore/custom/CENTRAL_PACKAGE
+      - type: bind
+        source: ./view
+        target: /home/node/primo-explore-devenv/primo-explore/custom/01WRLC_SCF:SCF_DEV
+    environment:
+        VIEW: 01WRLC_SCF:SCF_DEV 
+
