@@ -9,11 +9,9 @@ services:
       - 3001:3001
     volumes:
       - type: bind
-        source: ./CENTRAL_PACKAGE
-        target: /home/node/primo-explore-devenv/primo-explore/custom/CENTRAL_PACKAGE
-      - type: bind
-        source: ./view
-        target: /home/node/primo-explore-devenv/primo-explore/custom/01WRLC_SCF:SCF_DEV
+        source: ./views
+        target: /home/node/primo-explore-devenv/primo-explore/custom
     environment:
-        VIEW: 01WRLC_SCF:SCF_DEV 
+        PROXY: "https://wrlc-scf.alma.exlibrisgroup.com:443"
+        VIEW: "01WRLC_SCF:SCF_DEV"
 

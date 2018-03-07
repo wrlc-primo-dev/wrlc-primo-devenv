@@ -1,8 +1,8 @@
 FROM node:boron
 
 # set default proxy and view options
-ENV PROXY "https://wrlc-scf.alma.exlibrisgroup.com:443"
-ENV VIEW 01WRLC_SCF:SCF_DEV
+#ENV PROXY "https://wrlc-scf.alma.exlibrisgroup.com:443"
+#ENV VIEW 01WRLC_SCF:SCF_DEV
 
 # Install primo-explore-devenv
 WORKDIR /home/node
@@ -12,11 +12,10 @@ WORKDIR /home/node/primo-explore-devenv
 RUN npm install
 
 # Add the view package
-RUN mkdir -p primo-explore/custom/$VIEW
-#COPY view/ primo-explore/custom/$VIEW/
+#RUN mkdir -p primo-explore/custom/$VIEW
 
 # Add the central package
-RUN mkdir -p primo-explore/custom/CENTRAL_PACKAGE
+#RUN mkdir -p primo-explore/custom/CENTRAL_PACKAGE
 
 # expose ports
 EXPOSE 8003
