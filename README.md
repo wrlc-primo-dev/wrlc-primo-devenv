@@ -14,7 +14,7 @@ It's based on work done first by Nick Budak at the Orbis Cascade Alliance: [oca-
     ├── Dockerfile
     ├── README.md
     ├── docker-compose.yml
-    ├── setup.yml
+    ├── vars.env
     └── views
         ├── LIBRARY:MYVIEW
         │   ├── README.md
@@ -31,10 +31,13 @@ It's based on work done first by Nick Budak at the Orbis Cascade Alliance: [oca-
             ├── js
             └── showDirectives.txt
     ```
-3. Edit the setup.yml file to reflect the environment and view you're trying to test. The view variable should match the name of the directory you placed in views. In this example, it would be LIBRARY:MYVIEW.
+3. Rename the vars.env.template file to vars.env and change it to reflect the environment and view you're trying to test. The view variable should match the name of the directory you placed in views. In this example, it would be LIBRARY:MYVIEW.
 
 ## Run
 From the wrlc-docker-devenv directory run 
 ```bash
 docker-compose up
 ```
+Now visit your local development environment at http://localhost:8003/discovery/search?vid=LIBRARY:MYVIEW. Substitute your view code name for LIBARY:MYVIEW.
+## Customize
+You can make changes to the view you're developing in the views folder and they will be reflected in the local development environment.

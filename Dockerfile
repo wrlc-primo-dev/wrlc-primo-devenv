@@ -11,12 +11,6 @@ RUN git clone --progress --verbose https://github.com/ExLibrisGroup/primo-explor
 WORKDIR /home/node/primo-explore-devenv
 RUN npm install
 
-# Add the view package
-#RUN mkdir -p primo-explore/custom/$VIEW
-
-# Add the central package
-#RUN mkdir -p primo-explore/custom/CENTRAL_PACKAGE
-
 # expose ports
 EXPOSE 8003
 EXPOSE 3001

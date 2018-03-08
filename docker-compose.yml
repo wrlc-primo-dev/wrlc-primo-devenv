@@ -11,7 +11,5 @@ services:
       - type: bind
         source: ./views
         target: /home/node/primo-explore-devenv/primo-explore/custom
-    environment:
-        PROXY: "https://wrlc-scf.alma.exlibrisgroup.com:443"
-        VIEW: "01WRLC_SCF:SCF_DEV"
-
+    env_file:
+      - vars.env
