@@ -7,7 +7,7 @@ It's based on work done first by Nick Budak at the Orbis Cascade Alliance: [oca-
 ## Setup
 
 1. Install the latest version of [Docker Community Edition](https://www.docker.com/community-edition#/download), and [Docker Compose](https://docs.docker.com/compose/install/#install-compose) (Docker Compose is bundled with the Docker installers for Mac and most Windows systems).
-2. Download your view package or template and place it in the views folder. Your directory structure would look something like this if your view code is LIBRARY:MYVIEW. Note that the central package is distributed with this repository.
+2. Download your view package or template and place it in the views folder. Your directory structure would look something like this if your view code is `LIBRARY:MYVIEW`. Note that the central package is distributed with this repository.
 
     ```bash
     wrlc-docker-devenv
@@ -31,13 +31,19 @@ It's based on work done first by Nick Budak at the Orbis Cascade Alliance: [oca-
             ├── js
             └── showDirectives.txt
     ```
-3. Rename the vars.env.template file to vars.env and change it to reflect the environment and view you're trying to test. The view variable should match the name of the directory you placed in views. In this example, it would be LIBRARY:MYVIEW.
-
+3. Rename the `vars.env.template` file to `vars.env` and change it to reflect the environment and view you're trying to test. The view variable should match the name of the directory you placed in views. In this example, it would be `LIBRARY:MYVIEW`.
+`
 ## Run
 From the wrlc-docker-devenv directory run 
 ```bash
 docker-compose up
 ```
-Now visit your local development environment at http://localhost:8003/discovery/search?vid=LIBRARY:MYVIEW. Substitute your view code name for LIBARY:MYVIEW.
+Now visit your local development environment at `http://localhost:8003/discovery/search?vid=LIBRARY:MYVIEW`. Substitute your view code name for `LIBARY:MYVIEW`.
 ## Customize
 You can make changes to the view you're developing in the views folder and they will be reflected in the local development environment.
+## Build packages
+When you're happy with your changes you can have primo-explore-devenv bundle your changes into a zip for publishing:
+```bash
+docker-compose exec devenv gulp create-package
+```
+You'll be asked which package you want to build. The final product will be placed in the `./packages` directory.

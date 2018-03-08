@@ -9,6 +9,9 @@ services:
       - 3001:3001
     volumes:
       - type: bind
+        source: ./packages
+        target: /home/node/primo-explore-devenv/packages
+      - type: bind
         source: ./views
         target: /home/node/primo-explore-devenv/primo-explore/custom
     env_file:
