@@ -1,9 +1,5 @@
 FROM node:boron
 
-# set default proxy and view options
-#ENV PROXY "https://wrlc-scf.alma.exlibrisgroup.com:443"
-#ENV VIEW 01WRLC_SCF:SCF_DEV
-
 # Install primo-explore-devenv
 WORKDIR /home/node
 RUN npm install -g gulp
