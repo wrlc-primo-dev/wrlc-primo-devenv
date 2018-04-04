@@ -57,4 +57,4 @@ You'll be asked which package you want to build. The final product will be place
 If you're seeing the diamonds loading graphic, but your page never loads, double check that the name of your view folder matches the name configured in vars.env. Note that the url you use to access the devenv in your browser must use an actual view code on your primo instance. The folder name and view name in vars.env does not have to be the same as this view code.
 
 ### Colons
-View codes for Primo VE have colons, but those colon must be replaced with hypens when you upload your package. So a view with the code LIBRARY:VIEW must be uploaded as LIBRARY_VIEW. This has the potential to cause some confusion when setting up this environment. 
+View codes for Primo VE have colons, but those colon must be replaced with hypens when you upload your package. So a view with the code LIBRARY:VIEW must be uploaded as LIBRARY-VIEW. This has the potential to cause some confusion when setting up this environment. 
