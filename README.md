@@ -50,7 +50,7 @@ When you're happy with your changes you can have primo-explore-devenv bundle you
 ```bash
 docker-compose exec devenv gulp create-package
 ```
-You'll be asked which package you want to build. The final product will be placed in the `./packages` directory.
+You'll be asked which package you want to build. The final product will be placed in the `./packages` directory. Note that the container must be running to build the package, so run this command from a different shell than the contiainer is running in.
 ## Troubleshooting
 
 ### Naming conventions and the spinning diamond graphic
