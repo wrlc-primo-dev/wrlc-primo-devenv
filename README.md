@@ -9,9 +9,9 @@ It's based on work done first by Nick Budak at the Orbis Cascade Alliance: [oca-
 1. Install the latest version of [Docker Community Edition](https://www.docker.com/community-edition#/download), and [Docker Compose](https://docs.docker.com/compose/install/#install-compose) (Docker Compose is bundled with the Docker installers for Mac and most Windows systems).
 2. Clone this repository. Be sure to use the --recursive option as shown below. Using --recursive pulls in the central package.
 ```
-git clone https://github.com/wrlc-primo-dev/wrlc-primo-devenv.git --recursive
+git clone https://github.com/gwu-libraries/wrlc-primo-devenv.git --recursive
 ```
-3. Download your view package or template and place it in the views folder. Your directory structure would look something like this if your view folder is `LIBRARY-MYVIEW`. Note that the central package is distributed with this repository.
+3. Download your view package or template and place it in the views folder. Your directory structure would look something like this if your view folder is `01WRLC_GWA-live`. Note that the central package is distributed with this repository.
 
     ```bash
     wrlc-docker-devenv
@@ -20,7 +20,7 @@ git clone https://github.com/wrlc-primo-dev/wrlc-primo-devenv.git --recursive
     ├── docker-compose.yml
     ├── vars.env
     └── views
-        ├── LIBRARY-MYVIEW
+        ├── 01WRLC_GWA-live 
         │   ├── README.md
         │   ├── css
         │   ├── html
