@@ -103,3 +103,19 @@ div.md-chip.animate-opacity-and-scale.facet-element-marker-institution strong {
 div.md-chip.animate-opacity-and-scale.facet-element-marker-institution {
         height: auto;
 }
+
+/* improve font-weight and spacing around request form radio buttons */
+md-radio-group .label {
+    margin: 0;
+    margin-right: 1em;
+    font-weight: bold;
+    font-size: large;
+}
+
+md-radio-button ._md-label {
+    left: auto;
+    right: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
