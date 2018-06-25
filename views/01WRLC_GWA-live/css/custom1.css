@@ -13,6 +13,11 @@
 
 /*-----User Area -------*/
 
+/* Links in main menu */
+  prm-main-menu[menu-type=menu] .md-button {
+      font-size: .85em;
+  }
+
 /*background for Guest Button And Icon */
 .prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
     background-color: #fff;

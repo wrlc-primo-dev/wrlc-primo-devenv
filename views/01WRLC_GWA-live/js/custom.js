@@ -27,10 +27,12 @@
     /*
      * end increase default results
     */
-    // Add link to fines and fees payment 
+/*    
+      // Add link to fines and fees payment 
         app.component('prmFinesAfter', {
                 template: '<a class="layout-align-center-center layout-column" id="payment-button" href="https://gwfines-dev.wrlc.org/pay" target="_blank">Pay Fines</a>'
-        });
+        }); 
+*/
 })();
 
    
