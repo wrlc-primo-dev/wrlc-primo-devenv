@@ -30,9 +30,8 @@
 
     /* Insert found a problem link */
         app.component('prmFullViewServiceContainerAfter', {
-                template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://docs.google.com/spreadsheet/viewform?formkey=dDVfMTNIT0tneVFvNFZoQkNXc01SN2c6MQ" target="_blank">Found a Problem?</a>'
+                template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://goo.gl/forms/B9PRKfPiIlsrasrx2" target="_blank">Found a Problem?</a>'
         });
-
     /*
       // Uncomment for test profile customization package    
       // Add link to fines and fees payment 
