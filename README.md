@@ -14,7 +14,7 @@ git clone https://github.com/wrlc-primo-dev/wrlc-primo-devenv.git --recursive
 3. Download your view package or template and place it in the views folder. Your directory structure would look something like this if your view folder is `LIBRARY-MYVIEW`. Note that the central package is distributed with this repository.
 
     ```bash
-    wrlc-docker-devenv
+    wrlc-primo-devenv
     ├── Dockerfile
     ├── README.md
     ├── docker-compose.yml
@@ -42,7 +42,7 @@ From the wrlc-docker-devenv directory run
 ```bash
 docker-compose up
 ```
-Now visit your local development environment at `http://localhost:8003/discovery/search?vid=LIBRARY:MYVIEW`. Substitute your view code name for `LIBARY:MYVIEW`.
+Now visit your local development environment at `http://localhost:8003/discovery/search?vid=LIBRARY:MYVIEW`. Substitute your view code name for `LIBARY:MYVIEW`. The view name in the URL must match an availbale view in the primo insntance you are testing against. The name of the view in your local development environment does not have to match that view name.
 ## Customize
 You can make changes to the view you're developing in the views folder and they will be reflected in the local development environment.
 ## Build packages
