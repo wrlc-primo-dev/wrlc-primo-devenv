@@ -5,6 +5,9 @@
 
     var app = angular.module('viewCustom', ['angularLoad', 'wrlcAnnounce']);
 
+    app.value('wrlcFooterConfig', {
+        message: 'This service is provided by <a href="https://library.gwu.edu">GW Libraries</a> in partnership with the <a href="https://www.wrlc.org">Washington Research Library Consortium</a>'
+    });
     /****************************************************************************************************/
 
         /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
@@ -39,6 +42,7 @@
                 template: '<a class="layout-align-center-center layout-column" id="payment-button" href="https://gwfines-dev.wrlc.org/pay" target="_blank">Pay Fines</a>'
         });
     */
+
     /* configuration for WRLC banner */
         app.constant('announceConfig', {
           announceAPI: 'https://spreadsheets.google.com/feeds/list/1E4qRAR2RolPZJlf8V1eszR7OejM3ThUCL3M3rhdfq4k/1/public/values?alt=json',
@@ -53,5 +57,6 @@
           }
         });
     /* end banner configuration */
+
 })();
  
