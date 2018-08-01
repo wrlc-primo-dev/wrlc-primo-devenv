@@ -3,7 +3,7 @@
     'use strict';
 
 
-    var app = angular.module('viewCustom', ['angularLoad']);
+    var app = angular.module('viewCustom', ['angularLoad', 'wrlcAnnounce']);
 
     /****************************************************************************************************/
 
@@ -39,5 +39,19 @@
                 template: '<a class="layout-align-center-center layout-column" id="payment-button" href="https://gwfines-dev.wrlc.org/pay" target="_blank">Pay Fines</a>'
         });
     */
+    /* configuration for WRLC banner */
+        app.constant('announceConfig', {
+          announceAPI: 'https://spreadsheets.google.com/feeds/list/1E4qRAR2RolPZJlf8V1eszR7OejM3ThUCL3M3rhdfq4k/1/public/values?alt=json',
+          getShow: function(response) {
+              return(response.data.feed.entry[0].gsx$show.$t);
+          },
+          getMessage: function(response) {
+              return(response.data.feed.entry[0].gsx$message.$t);
+          },
+          getLink: function(response) {
+              return(response.data.feed.entry[0].gsx$link.$t);
+          }
+        });
+    /* end banner configuration */
 })();
  

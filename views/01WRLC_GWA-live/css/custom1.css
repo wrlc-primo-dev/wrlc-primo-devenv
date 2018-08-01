@@ -124,3 +124,35 @@ md-radio-button ._md-label {
     margin-right: 10px;
 }
 
+/* WRLC announce CSS */
+.material-icons.gray { 
+  color: #808080;
+}
+
+#wrlc-announce-icon {
+  margin-right:12px;
+}
+
+#dismiss-announcement {
+  min-width: 0px;
+}
+
+#wrlc-announce-banner {
+  background-color: lightblue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+  height: 50px;
+}
+
+prm-search-bar {
+  padding-bottom: 58.5px;
+}
+.__sm prm-search-bar {
+  padding-bottom: 50px;
+}
+.__xs prm-search-bar {
+  padding-bottom: 50px;
+}
+
