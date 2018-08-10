@@ -156,3 +156,11 @@ prm-search-bar {
   padding-bottom: 50px;
 }
 
+/* hide personal details tab */
+prm-account-overview md-tabs md-pagination-wrapper md-tab-item:last-of-type {
+  display:none;
+}
+
+prm-account-overview md-tabs md-pagination-wrapper md-ink-bar:last-of-type {
+  display:none;
+}
