@@ -145,6 +145,16 @@ md-radio-button ._md-label {
   width:100%;
   height: 50px;
 }
+/* adjusting announcement banner padding */
+/* changed value from 50 to 58.5 */
+.__xs prm-search-bar {
+  padding-bottom: 58.5px;
+}
+
+/* added new heigh in xs view */
+.__xs #wrlc-announce-banner {
+  height: 58.5px;
+}
 
 prm-search-bar {
   padding-bottom: 58.5px;
