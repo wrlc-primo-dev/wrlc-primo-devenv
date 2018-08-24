@@ -3,7 +3,7 @@
     'use strict';
 
 
-    var app = angular.module('viewCustom', ['angularLoad', 'wrlcAnnounce']);
+    var app = angular.module('viewCustom', ['angularLoad', 'wrlcAnnounce', 'illCard']);
 
     app.value('wrlcFooterConfig', {
         message: 'This service is provided by <a href="https://library.gwu.edu">GW Libraries</a> in partnership with the <a href="https://www.wrlc.org">Washington Research Library Consortium</a>'
@@ -57,6 +57,15 @@
           }
         });
     /* end banner configuration */
+
+    /* ILL Card in account */
+      app.constant('illCardConfig', {
+        card_title: 'Check Interlibrary Loan Requests',
+        message : 'Sign in to Interlibrary Loan to view your interlibrary account information.',
+        signon_url : 'https://proxygw.wrlc.org/login?url=https://gwu.illiad.oclc.org/illiad/illiad.dll',
+        link_text : 'Sign into Interlibrary Loan',
+      });
+
 
 })();
  
