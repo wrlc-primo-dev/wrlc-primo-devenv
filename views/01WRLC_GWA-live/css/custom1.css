@@ -175,22 +175,15 @@ prm-account-overview md-tabs md-pagination-wrapper md-ink-bar:last-of-type {
   display:none;
 }
 
-/* login screen wrap */
-/* prm-login-item h3 {
-  overflow-wrap: normal;
-} */
-/* prm-login-item h3.list-item-title.md-display-3 {
-  white-space: normal;
-  overflow-wrap: normal;
-}
-*/
-
-/* md-list-item {
-  white-space: normal;
-} */  
-
+/* make text wrap in login lightbox */
 md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line>._md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line>._md-no-style .md-list-item-text h3 {
   white-space: normal;
 }
 
-
+/* make Consortium Loan Service request link look like a link */
+alma-howovp button span {
+  color: #3d6e94;
+}
+alma-howovp button span:hover {
+    text-decoration: underline;
+}
