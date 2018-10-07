@@ -95,20 +95,6 @@ prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:ho
 	background-color: #E9D5A3;
 } */
 
-/* no truncation of facets - via WRLC 
-  Wraps institution names instead of truncating on Primo facet sidebar
-*/
-
-div.md-chip.animate-opacity-and-scale.facet-element-marker-institution strong {
-    white-space: normal;
-    overflow: visible;
-    text-indent : -1.5em ;
-    margin-left :  1.5em ;
-}
-div.md-chip.animate-opacity-and-scale.facet-element-marker-institution {
-        height: auto;
-}
-
 /* improve font-weight and spacing around request form radio buttons */
 md-radio-group .label {
     margin: 0;
@@ -186,4 +172,9 @@ alma-howovp button span {
 }
 alma-howovp button span:hover {
   text-decoration: underline;
+}
+
+/* improve facet number padding */
+.facet-title > span:last-of-type {
+  padding-left: 5px;
 }
