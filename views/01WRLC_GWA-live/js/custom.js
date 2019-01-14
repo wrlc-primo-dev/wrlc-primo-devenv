@@ -2,7 +2,6 @@
     "use strict";
     'use strict';
 
-
     var app = angular.module('viewCustom', ['angularLoad', 'wrlcAnnounce', 'illCard']);
 
     app.value('wrlcFooterConfig', {
@@ -10,31 +9,31 @@
     });
     /****************************************************************************************************/
 
-        /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
+    /*In case of CENTRAL_PACKAGE - comment out the below line to replace the other module definition*/
 
-        /*var app = angular.module('centralCustom', ['angularLoad']);*/
+    /*var app = angular.module('centralCustom', ['angularLoad']);*/
 
     /****************************************************************************************************/
-  
+
     /* Increases default results page shown to 2 pages (20 results) 
      * stolen from University of Denver's Primo instance https://library.du.edu/
      */
-        app.component('prmExploreMainAfter',{
-                bindings: {parentCtrl: '<'},
-                controller: function($scope){
-                var vm = this;
-             vm.parentCtrl.searchService.cheetah.configurationUtil.searchStateService.resultsBulkSize = 20;                    
-           }
-        });
+    app.component('prmExploreMainAfter', {
+        bindings: { parentCtrl: '<' },
+        controller: function controller($scope) {
+            var vm = this;
+            vm.parentCtrl.searchService.cheetah.configurationUtil.searchStateService.resultsBulkSize = 20;
+        }
+    });
 
     /*
      * end increase default results
      */
 
     /* Insert found a problem link */
-        app.component('prmFullViewServiceContainerAfter', {
-                template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://goo.gl/forms/B9PRKfPiIlsrasrx2" target="_blank">Found a Problem?</a>'
-        });
+    app.component('prmFullViewServiceContainerAfter', {
+        template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://docs.google.com/forms/d/1ZcPZDJa_aaruGe3_c8liYr-9Okk4LXj1v8Ub0bdNUp4" target="_blank">Found a Problem?</a>'
+    });
     /*
       // Uncomment for test profile customization package    
       // Add link to fines and fees payment 
@@ -44,28 +43,25 @@
     */
 
     /* configuration for WRLC banner */
-        app.constant('announceConfig', {
-          announceAPI: 'https://spreadsheets.google.com/feeds/list/1E4qRAR2RolPZJlf8V1eszR7OejM3ThUCL3M3rhdfq4k/1/public/values?alt=json',
-          getShow: function(response) {
-              return(response.data.feed.entry[0].gsx$show.$t);
-          },
-          getMessage: function(response) {
-              return(response.data.feed.entry[0].gsx$message.$t);
-          },
-          getLink: function(response) {
-              return(response.data.feed.entry[0].gsx$link.$t);
-          }
-        });
+    app.constant('announceConfig', {
+        announceAPI: 'https://spreadsheets.google.com/feeds/list/1E4qRAR2RolPZJlf8V1eszR7OejM3ThUCL3M3rhdfq4k/1/public/values?alt=json',
+        getShow: function getShow(response) {
+            return response.data.feed.entry[0].gsx$show.$t;
+        },
+        getMessage: function getMessage(response) {
+            return response.data.feed.entry[0].gsx$message.$t;
+        },
+        getLink: function getLink(response) {
+            return response.data.feed.entry[0].gsx$link.$t;
+        }
+    });
     /* end banner configuration */
 
     /* ILL Card in account */
-      app.constant('illCardConfig', {
+    app.constant('illCardConfig', {
         card_title: 'Check Interlibrary Loan Requests',
-        message : 'Sign in to Interlibrary Loan to view your interlibrary account information.',
-        signon_url : 'https://proxygw.wrlc.org/login?url=https://gwu.illiad.oclc.org/illiad/illiad.dll',
-        link_text : 'Sign into Interlibrary Loan',
-      });
-
-
+        message: 'Sign in to Interlibrary Loan to view your interlibrary account information.',
+        signon_url: 'https://proxygw.wrlc.org/login?url=https://gwu.illiad.oclc.org/illiad/illiad.dll',
+        link_text: 'Sign into Interlibrary Loan'
+    });
 })();
- 
