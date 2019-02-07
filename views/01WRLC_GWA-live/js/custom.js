@@ -32,7 +32,7 @@
 
     /* Insert found a problem link */
     app.component('prmFullViewServiceContainerAfter', {
-        template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://goo.gl/forms/gOhCZQD0Lo6Y8FwI2" target="_blank">Found a Problem?</a>'
+        template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://library.gwu.edu/found-problem" target="_blank">Found a Problem?</a>'
     });
     /*
       // Uncomment for test profile customization package    
