@@ -31,9 +31,17 @@
      */
 
     /* Insert found a problem link */
-    app.component('prmFullViewServiceContainerAfter', {
-        template: '<a class="layout-align-left-left layout-column" id="found-problem" href="https://library.gwu.edu/found-problem" target="_blank">Found a Problem?</a>'
+    app.controller('foundProblem', function () {
+        var vm = this;
+        var currentURL = encodeURIComponent(window.location.href);
+        var foundProblemForm = 'https://library.gwu.edu/found-problem'
+        var vm.foundProblemCombinedURL = foundProblemForm + '?url=' + currentURL;
     });
+    app.component('prmFullViewServiceContainerAfter', {
+        contoller: 'foundProblem',
+        template: '<a class="layout-align-left-left layout-column" id="found-problem" href="{{ $ctrl.foundProblemCombinedURL }}" target="_blank">Found a Problem?</a>'
+    });
+
     /*
       // Uncomment for test profile customization package    
       // Add link to fines and fees payment 
